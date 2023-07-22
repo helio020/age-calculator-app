@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 520px;
+    padding: 50px 20px;
+    border-radius: 30px 30px 120px 30px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.input input[type=number]{
+    outline-color: hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+}
+
+.input span {
+    height: 16px;
+    font-style: italic;
+    margin-top: 4px;
+    font-size: 8px;
+    color: hsl(0, 100%, 67%);
+} 
+
+#day {
+    width: 80px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 18px;
+}
+
+#month {
+    width: 80px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 18px;
+}
+
+#year {
+    width: 80px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 18px;
+}
+
+#submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 30px;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    top: 150px;
+    right: 140px;
+}
+
+#submit:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.icon-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.hr {
+    width: 300px;
+    border: 1px solid hsl(0, 0%, 86%);
+    margin-top: 70px;
+}
+
+.results {
+   margin-top: 50px;
+}
+
+.div {
+    color: hsl(0, 0%, 8%);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.div span {
+    color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: 600px;
+        padding: 50px 30px;
+    }
+
+    form {
+        justify-content: flex-start;
+        column-gap: 30px;
+    }
+
+    .input span {
+        font-size: 12px;
+    }
+
+    #day {
+        width: 120px;
+        font-size: 20px;
+    }
+
+    #month {
+        width: 120px;
+        font-size: 20px;
+    }
+
+    #year {
+        width: 120px;
+        font-size: 20px;
+    }
+
+    #submit {
+        width: 70px;
+        height: 70px;
+        right: 40px;
+        top: 108px;
+    }
+
+    .icon-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hr {
+        width: 530px;
+        margin-top: 30px;
+    }
+
+    .results {
+        margin-top: 35px;
+    }
+
+    .div {
+        font-size: 56px;
+    }
+}
